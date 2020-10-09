@@ -1,4 +1,4 @@
-1const axios = require('axios')
+const axios = require('axios')
 const mysql = require('mysql')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
@@ -25,7 +25,7 @@ const saltRounds = 10
 //   })
 // }
 
-const login = (req, res) => {
+const login = (req, res,) => {
   const { username, password } = req.body
 
   axios(`https://${process.env.AUTH0_DOMAIN}/oauth/token`, {
